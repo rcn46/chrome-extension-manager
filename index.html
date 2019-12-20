@@ -4,7 +4,8 @@
 <meta name="description" content="Manage Extensino">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Extension Manager</title>
+
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" /> 
    <link href="assets/css/style.css" rel="stylesheet" type="text/css" /> 
@@ -47,22 +48,18 @@
             <div class="container-fluid">
               <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0;">
             <div class="row navbar-default">
-              <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="col-md-8 col-sm-8 col-xs-8 form-container">
                 <form>
         <div class="form-group">
           <input type="text search-plugin" class="form-control" placeholder="Search" ng-model="searchText">
         </div>
               </form>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-     <ul class="action-menu pull-right" ng-if="1==2">
-        <li>
-          <a href="#"><i class="icon ion-ios-trash"></i></a>
-        </li>
-         <li>
-          <a href="#"><i class="icon ion-android-checkbox-outline"></i></a>
-        </li>
-      </ul>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+      <div class="btn-group pull-right action-group" role="group" aria-label="actions-all">
+        <a ng-click="disableAllExtensions()" class="btn btn-border btn-default" data-toggle="tooltip" data-placement="bottom" title="Disable All"><i class="icon ion-eye-disabled"></i> <span class="small-title-block">Disable All</span> </a>
+        <a ng-click="enableAllExtensions()" class="btn btn-border btn-default" data-toggle="tooltip" data-placement="bottom" title="Enable All"><i class="icon ion-eye"></i> <span class="small-title-block">Enable All</span> </a>
+      </div>
               </div>
 
    
@@ -112,7 +109,7 @@
   </div>
 
 </div>
-  <script src="assets/js/angular.min.js"></script>
-   <script src="assets/js/main.js"></script>
+<script src="/assets/js/angular.min.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

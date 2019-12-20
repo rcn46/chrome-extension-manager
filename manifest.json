@@ -2,20 +2,22 @@
   "name": "Chrome Extension Manager",
   "short_name": "Extension Manager",
   "description": "This extension will assist you to manage installed extensions in your browser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "icons": {
     "16": "assets/icons/icon-16.png",
     "38": "assets/icons/icon-32.png",
     "128": "assets/icons/icon-128.png"
   },
-
+  "web_accessible_resources": [
+    "/assets/js/angular.min.js",
+    "/assets/js/main.js"
+],
   "background": {
     "scripts": [
-      "assets/js/background.js",
-      "assets/js/main.js"
+      "/assets/js/background.js"
     ],
-    "css": ["assets/css/style.css"],
+    "css": ["/assets/css/style.css"],
     "persistent": false
   },
 "permissions": [
@@ -25,6 +27,6 @@
      "management"
 ],
   "browser_action": {
-    "default_icon": "assets/icons/icon-20.png"
+    "default_icon": "/assets/icons/icon-20.png"
   }
 }
