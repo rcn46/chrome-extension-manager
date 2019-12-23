@@ -1,14 +1,14 @@
-# Chrome Extension Mmanager
+# Chrome Extension Manager
 Manage extensions in Chrome browser way faster, easier and with great comfort.
 
 
 ### Core features:
 
-- [x] Easily Manage all the installed extension
-- [x] One click Enable All/Disable All extensions
-- [x] Unsinstall extension
-- [x] Filter throgh extensions
-- [x] Desciptive overview of extensions
+- [x] Easily Manage all the installed extensions
+- [x] One click Enable/Disable All extensions
+- [x] Unsinstall extensions
+- [x] Filter through extensions
+- [x] Descriptive overview of extensions
 - [x] User friendly features and experience
 
 
